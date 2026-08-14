@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Photo Gallery</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- Large display box -->
+  <div id="image">
+    Hover over an image below to display here.
+  </div>
+
+  <!-- Thumbnail image gallery -->
+  <div class="gallery">
+    <img class="preview" 
+         src="https://picsum.photos/600/400?random=1" 
+         alt="Stylized City Skyline at Dusk" 
+         onmouseover="upDate(this)" 
+         onmouseout="undo()">
+
+    <img class="preview" 
+         src="https://picsum.photos/600/400?random=2" 
+         alt="Misty Mountain Forest Landscape" 
+         onmouseover="upDate(this)" 
+         onmouseout="undo()">
+
+    <img class="preview" 
+         src="https://picsum.photos/600/400?random=3" 
+         alt="Calm Ocean Beach at Sunset" 
+         onmouseover="upDate(this)" 
+         onmouseout="undo()">
+  </div>
+
+</body>
+</html>
